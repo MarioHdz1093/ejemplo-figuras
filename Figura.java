@@ -1,33 +1,33 @@
-
 /**
- * Write a description of class Figura here.
+ * Esta clase es una superclase para representar las carateristica 
+ * comunes en muchas figuras
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (El niño) 
+ * @version (1.0)
  */
+
+
 public class Figura
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Figura
-     */
+    protected float area;
+    
     public Figura()
     {
-        // initialise instance variables
-        x = 0;
+        area = 0;
+     
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public void calcularArea()
     {
-        // put your code here
-        return x + y;
+        System.out.println("No se como calcular el area!!");
+       
+    
+    }
+    
+    public void imprime()
+    {
+        System.out.println("El area de la figura es: " + area);
     }
 }
+
+
